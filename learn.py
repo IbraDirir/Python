@@ -1,10 +1,4 @@
-name = "tom"
-if name is "Bucky":
-    print("hey bucky")
-elif name is "frank":
-    print("hey frank")
-elif name is "lucy":
-    print("hey lucy")
-else:
-    print("please sign  up for the site!")
-
+foods = ['bacon', 'tuna', 'pasta', 'sausages']
+for f in foods[:3]:
+    print(f)
+    print(len(f))
