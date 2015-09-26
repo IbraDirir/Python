@@ -1,8 +1,9 @@
-#continue
-numbersTaken =[9, 4, 11, 7, 8]
-print("here are the numbers still available")
+#functions
+def fish():
+    print("fish builds your mind")
+def kenyash_to_usd(ksh):
+    amount = ksh * 105
+    print(amount)
 
-for n in range(1,20):
-    if n in numbersTaken:
-      continue
-    print(n)
+fish()
+kenyash_to_usd(100)
