@@ -1,8 +1,8 @@
+#continue
+numbersTaken =[9, 4, 11, 7, 8]
+print("here are the numbers still available")
 
-magicNumber = 21
-for x in range(101):
-    if x is magicNumber:
-      print(x, "is the magic number")
-      break
-    else:
-      print(x)
+for n in range(1,20):
+    if n in numbersTaken:
+      continue
+    print(n)
