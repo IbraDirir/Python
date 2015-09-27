@@ -1,20 +1,11 @@
 class Enemy:
-    life = 3
-    def attack(self):
-        print('ouch!')
-        self.life -= 1
+    def __init__(self, x):
+        self.energy = x
+    def get_energy(self):
+        print(self.energy)
 
-    def checklife(self):
-     if self.life <= 0:
-        print('dead!')
-     else:
-        print(str(self.life) + ' life left')
+jason = Enemy(8)
+sandy = Enemy(20)
 
-enemy1 = Enemy()
-enemy2 = Enemy()
-enemy1.attack()
-enemy1.attack()
-enemy1.checklife()
-enemy2.attack()
-enemy2.checklife()
-
+jason.get_energy()
+sandy.get_energy()
