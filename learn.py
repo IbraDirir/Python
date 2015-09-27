@@ -1,11 +1,19 @@
-def get_gender(sex = 'Unknown'):
+#variable scope
+a = 101
+def ibra():
+    print(a)
 
-    if sex is "m":
-        sex = "Male"
-    elif sex is 'f':
-        sex = "Female"
-    print(sex)
+def jamila():
+    print(a)
 
-get_gender('m')
-get_gender('f')
-get_gender()
+ibra()
+jamila()
+
+#keyword arguments
+
+def safari(name = "ibrahim",  did = "went",  where = "to Mombasa"):
+    print(name, did,where)
+
+safari()
+safari("jamila", "went", "to Mombasa")
+safari(did =  "left", where = "Nairobi")
