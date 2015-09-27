@@ -1,10 +1,8 @@
-#unpacking arguments
-def health_calculator(age, apples_ate, cigs_smoke):
-    answer = (100-age)+(apples_ate * 3.5) - (cigs_smoke*2)
-    print(answer)
-ibras_data = [21, 5, 0]
+#sets
+groceries = {'milk', 'pasta', 'mkate', 'milk', 'cofee', 'bananas'}
+print(groceries)
 
-mohas_data = [45, 0, 20]
-
-health_calculator(*mohas_data)
-health_calculator(*ibras_data)
+if 'milk' in groceries:
+    print("you  already have milk boss")
+else:
+    print("you need some milk")
