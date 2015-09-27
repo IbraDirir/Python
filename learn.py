@@ -1,19 +1,9 @@
-#variable scope
-a = 101
-def ibra():
-    print(a)
-
-def jamila():
-    print(a)
-
-ibra()
-jamila()
-
-#keyword arguments
-
-def safari(name = "ibrahim",  did = "went",  where = "to Mombasa"):
-    print(name, did,where)
-
-safari()
-safari("jamila", "went", "to Mombasa")
-safari(did =  "left", where = "Nairobi")
+#flexible number of arguments
+def add_numbers(*add):
+    total =  0
+    for  a in add:
+        total += a
+    print(total)
+add_numbers(5)
+add_numbers(9,10)
+add_numbers(10,100,1000)
