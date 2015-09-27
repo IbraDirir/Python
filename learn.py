@@ -1,9 +1,11 @@
-#functions
-def fish():
-    print("fish builds your mind")
-def kenyash_to_usd(ksh):
-    amount = ksh * 105
-    print(amount)
+def get_gender(sex = 'Unknown'):
 
-fish()
-kenyash_to_usd(100)
+    if sex is "m":
+        sex = "Male"
+    elif sex is 'f':
+        sex = "Female"
+    print(sex)
+
+get_gender('m')
+get_gender('f')
+get_gender()
