@@ -1,11 +1,13 @@
-class Enemy:
-    def __init__(self, x):
-        self.energy = x
-    def get_energy(self):
-        print(self.energy)
+#inheritance
+class Parent():
+    def print_last_name(self):
+        print('Dirir')
+class Child(Parent):
 
-jason = Enemy(8)
-sandy = Enemy(20)
-
-jason.get_energy()
-sandy.get_energy()
+    def print_first_name(self):
+        print('Ibrahim')
+    def print_last_name(self):
+        print('Ahmed')
+Ibrahim = Child()
+Ibrahim.print_first_name()
+Ibrahim.print_last_name()
