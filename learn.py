@@ -1,11 +1,4 @@
-import threading
-
-class IbraMessenger(threading.Thread):
-    def run(self):
-        for _ in range(10):
-            print(threading.currentThread().getName())
-
-x = IbraMessenger(name = 'send out messages')
-y = IbraMessenger(name = 'send out messages')
-x.start()
-y.start()
+date, item, price = ['December 20, 2015','Bread Gloves', '90']
+print(item)
+print(date)
+print(price)
