@@ -1,7 +1,10 @@
-#Dictionary
-friends = {'ema': ' shouts alot', 'john': ' cool guy', 'irene': ' hardworking lady'}
+import random
+import urllib.request
 
-print(friends['irene'])
+def  download_web_image(url):
+     name = random.randrange(1,1000)
+     full_name = str(name) + ".jpeg"
+     urllib.request.urlretrieve(url, full_name)
 
-for k,v in friends.items():
-    print(k + v)
+download_web_image("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSImDyCgy9JmL-eptrGZtPbwmvA4xvL6jhkaed24iAeOcJjbq2SDA")
+
