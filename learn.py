@@ -1,10 +1,9 @@
-import random
-import urllib.request
+fw = open('sample.txt', 'w')
+fw.write('writing some stuff in my text file\n')
+fw.write('watching tutorials')
+fw.close()
 
-def  download_web_image(url):
-     name = random.randrange(1,1000)
-     full_name = str(name) + ".jpeg"
-     urllib.request.urlretrieve(url, full_name)
-
-download_web_image("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSImDyCgy9JmL-eptrGZtPbwmvA4xvL6jhkaed24iAeOcJjbq2SDA")
-
+fr = open('sample.txt', 'r')
+text = fr.read()
+print(text)
+fr.close()
