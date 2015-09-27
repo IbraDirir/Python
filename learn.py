@@ -1,8 +1,7 @@
-#sets
-groceries = {'milk', 'pasta', 'mkate', 'milk', 'cofee', 'bananas'}
-print(groceries)
+#Dictionary
+friends = {'ema': ' shouts alot', 'john': ' cool guy', 'irene': ' hardworking lady'}
 
-if 'milk' in groceries:
-    print("you  already have milk boss")
-else:
-    print("you need some milk")
+print(friends['irene'])
+
+for k,v in friends.items():
+    print(k + v)
