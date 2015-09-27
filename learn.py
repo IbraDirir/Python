@@ -1,13 +1,12 @@
-#inheritance
-class Parent():
-    def print_last_name(self):
-        print('Dirir')
-class Child(Parent):
+class Mario():
+    def move(self):
+        print('i am moving')
 
-    def print_first_name(self):
-        print('Ibrahim')
-    def print_last_name(self):
-        print('Ahmed')
-Ibrahim = Child()
-Ibrahim.print_first_name()
-Ibrahim.print_last_name()
+class Shroom():
+    def eat_shroom(self):
+        print('i am  eating shroom')
+class BigMario(Mario, Shroom):
+    pass
+bm = BigMario()
+bm.move()
+bm.eat_shroom()
