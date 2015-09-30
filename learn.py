@@ -1,7 +1,5 @@
-#for loop
-a =  ['cat', 'cow', 'camel', 'sheep']
-for  x in a:
-    print(x, len(x))
-for  x in a[:]:
-    if len(x) > 6: a.insert(0 , x)
-    print(a)
+for i in range(5, 20, 10):
+    print(i)
+a = ['ali', 'abdi', 'hwo', 'jamila']
+for x  in range(len(a)):
+    print(x,  a[x])
