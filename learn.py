@@ -1,7 +1,10 @@
+x = int(input('please enter an integer'))
+if    x <0:
 
-q = ['a','b', 'c', 'd',]
-p = [1, q, 4]
-print(len(q))
-print(len(p))
-p[1].append('extra')
-print(p[1])
+         print('negative changed to zero')
+elif x == 0:
+         print("zero")
+elif x == 1:
+         print('single')
+else:
+         print('more')
