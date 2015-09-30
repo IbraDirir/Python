@@ -6,3 +6,5 @@ a[0:2] = [1, 12]
 print(a)
 a[0:2] = []
 print(a)
+a[1:2] =  ['bletch', 'xyzzy']
+print (a)
