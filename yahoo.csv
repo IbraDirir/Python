@@ -1,0 +1,522 @@
+b'<!DOCTYPE html>\r
+<!--[if IE 7 ]>    <html class="ie7 oldie"> <![endif]-->\r
+<!--[if IE 8 ]>    <html class="ie8 oldie"> <![endif]-->\r
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->\r
+<!--[if (gt IE 9)|!(IE)]><!--> <html itemscope itemtype="http://schema.org/Blog"> <!--<![endif]-->\r
+\r
+<head>\r
+\r
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>\r
+    <meta charset="utf-8"/>\r
+  <meta name="description" content="CANbike, the blog from a Canadian who enjoys mountain biking. Keep on biking! " />\r
+  <meta name="keywords" content="canbike" />\r
+  <meta name="author" content="CANbike.ca" />\r
+  <meta name="viewport" content="width=device-width">\r
+\r
+<title>Yahoo! Finance Key Statistics: Download to a CSV File</title>\r
+\r
+  <link rel="favourites icon" href="/public/themes/simple/images/favicon.ico" />  \r
+  <link rel="alternate" type="application/rss+xml" title="Wolf Default RSS Feed" href="http://www.canbike.org/rss.xml" />\r
+  <link rel="stylesheet" type="text/css" media="screen" href="/public/themes/page/css/min.css" />\r
+  <link href="https://plus.google.com/100951150149826984270" rel="publisher" />\r
+  <link href="https://plus.google.com/108293577637980254806" rel="author" />\r
+\r
+\t<script type="text/javascript">\r
+\r
+\t // Add a script element as a child of the body\r
+\t function downloadJSAtOnload() {\r
+\t var element = document.createElement("script");\r
+\t element.src = "/public/themes/page/js/combined.js";\r
+\t document.body.appendChild(element);\r
+\t }\r
+\r
+\t // Check for browser support of event handling capability\r
+\t if (window.addEventListener)\r
+\t window.addEventListener("load", downloadJSAtOnload, false);\r
+\t else if (window.attachEvent)\r
+\t window.attachEvent("onload", downloadJSAtOnload);\r
+\t else window.onload = downloadJSAtOnload;\r
+\r
+\t</script>\r
+\r
+\r
+<style>\r
+@media (max-height: 600px)\r
+{\r
+  header nav ul {    \r
+   margin-right: 0px;\r
+  }\r
+\r
+  #header-shadow{    \r
+   position: static;\r
+  }\r
+\r
+  #header-wrap {\r
+   position: static;\r
+  }\r
+\r
+  .content-wrap section {\r
+   padding: 55px 0 25px 0;\r
+  }\r
+}\r
+\r
+@media (max-width: 940px) \r
+{\r
+  html{\r
+   background: #999;\r
+  }\r
+\r
+  body{\r
+   width:600px;\r
+   margin: auto;\r
+  }\r
+\r
+  img {\r
+   max-width:560px;\r
+   width: auto;\r
+   height: auto;\r
+  }\r
+\r
+  #header-shadow{    \r
+   position: static;\r
+   height: 145px;\r
+  }\r
+\r
+  #header-wrap {\r
+   position: static;\r
+   height: 140px;\r
+   background: #333;\r
+  }\r
+\r
+  header hgroup {\r
+   position: static;\r
+  }\r
+\r
+  header nav ul {    \r
+   margin-right: 0px;\r
+  }\r
+\r
+  header nav ul li {\r
+   width: 140px;\r
+  }\r
+\r
+  header ul a{\r
+   width: 120px;\r
+  }\r
+\r
+  .content-wrap {\r
+   width: 600px;\r
+  }\r
+\r
+  .content-wrap section {\r
+   padding: 55px 0 25px 0;\r
+  }\r
+\r
+  .content-wrap section .primary {\r
+   width: 600px;\r
+  }\r
+\r
+  section#main {\r
+   width: 600px;\r
+  }\r
+\r
+  footer .footer-content {\r
+   width: 560px;\r
+  }\r
+\r
+  footer .footer-extra {\r
+   width: 600px;\r
+  }\r
+}\r
+\r
+@media (max-width: 599px)\r
+{\r
+  html{\r
+   background: #999;\r
+  }\r
+\r
+  body{\r
+   width:320px;\r
+   margin: auto;\r
+  }\r
+\r
+  img {\r
+   max-width:280px;\r
+   width: auto;\r
+   height: auto;\r
+  }\r
+\r
+  #header-shadow{    \r
+   position: static;\r
+   height: 215px;\r
+  }\r
+\r
+  #header-wrap {\r
+   position: static;\r
+   height: 210px;\r
+   background: #333;\r
+  }\r
+\r
+  header hgroup {\r
+   position: static;\r
+  }\r
+\r
+  header nav ul {    \r
+   margin-right: 0px;\r
+  }\r
+\r
+  header nav ul li {\r
+   width: 140px;\r
+  }\r
+\r
+  header ul a{\r
+   width: 120px;\r
+  }\r
+\r
+  .content-wrap {\r
+   width: 320px;\r
+  }\r
+\r
+  .content-wrap section {\r
+   padding: 55px 0 25px 0;\r
+  }\r
+\r
+  .content-wrap section .primary {\r
+   width: 320px;\r
+  }\r
+\r
+  section#main {\r
+   width: 320px;\r
+  }\r
+\r
+  footer .footer-content {\r
+   width: 280px;\r
+  }\r
+\r
+  footer .footer-extra {\r
+   width: 320px;\r
+  }\r
+\r
+  footer  ul.footer-menu li {\r
+   float: none;\r
+  }\r
+\r
+  footer p.footer-text a {\r
+   display: block;\r
+  }\r
+\r
+  .divider {\r
+   display: none;\r
+  }\r
+\r
+  #hidesocialmedia {\r
+   display: none;\r
+  }\r
+}\r
+</style>\r
+</head>\r
+\r
+<body>\r
+\r
+<!-- header-wrap -->\r
+<div id="header-shadow">\r
+<div id="header-wrap">\r
+    <header>\r
+\r
+        <hgroup>\r
+            <div class="headerlogo"><a href="http://www.canbike.org/">CAN<span class="bike">bike</span></a><span class="org">.org</span></div>\r
+        </hgroup>\r
+\r
+        <nav>\r
+\t<ul>\r
+\t\t\t  <li><a href="http://www.canbike.org/"><span class="menuborderleft"></span>CANbike<div class="menudescription">Latest News</div></a></li>\r
+\r
+\r
+\t\t\t\t\t  <li><a href="http://www.canbike.org/bike.html" >Bike<div class="menudescription">Articles</div></a></li>\r
+\t\t\t\t\t  <li><a href="http://www.canbike.org/off-topic.html" >Off-Topic<div class="menudescription">Articles</div></a></li>\r
+\t\t\t\t\t  <li><a href="http://www.canbike.org/about-me.html" >About Me<div class="menudescription">CANbike.org</div></a></li>\r
+\t\t \r
+\t</ul>\r
+        </nav>\r
+    </header>\r
+</div>\r
+</div>\r
+\r
+<!-- content-wrap -->\r
+<div class="content-wrap">\r
+\r
+      <!-- main -->\r
+      <section id="main" class="clearfix">\r
+\r
+        <div class="top"><span class="info">Posted by CANbike on Sat, 10 Aug 2013</span></div>        <h1>Yahoo! Finance Key Statistics: Download to a CSV File</h1>\r
+\r
+\r
+                <article class="post">\r
+                   \t<p><a href="http://help.yahoo.com/kb/index?page=content&amp;y=PROD_FIN&amp;locale=en_US&amp;id=SLN2347&amp;pir=cvHWQWVibUlns1NYksh93.jcGOf7fDQ26b_RDaIdqtdgrCWnTHDIwdJRHS.ZNHtex_Rb5fNNz7YIfnCbvaxES1rnylrO5v5Au_ni1AGAMI413wtMnQ3335v0l9Scj0om0OUW.4u0tXci6YBQaamGukE5SQ5YOnQDaaNHYW_0OFm9xio5aDiien0cRw_8z4bGIYyQ8BmhvbMU1_XwrEJTzbSZqshx6S8LfCCZi1U.EKT.QNa0hq5mL3gfg.a2d61cuBes8JEm8okeIKzojAtCHEXMvA4zT_Ep4OAz8kOszQVX52DaJ11bavrzwuSpiRwPGHzQxgiUZ6JhzBdD9g8vhAfYWhZ4Yj7X1uvP2_0hursCsTTPP8uVLDRMmd4gLxUQuLefuasQ">Yahoo! Finance Key Statistics</a> provides a wealth of financial information for publicy traded companies. It&#8217;s a free and useful statistical resource for investors to research a company&#8217;s stock.</p>
+
+\t<p>The following is my solution to downloading key statistics to a <span class="caps">CSV</span> file.</p>
+
+\t<h2>No Key Statistics Download?</h2>
+
+\t<p>Yahoo! Finance officially supports downloading of stock data to a <span class="caps">CSV</span> (<a href="http://en.wikipedia.org/wiki/Comma-separated_values">Comma-Separated Values</a>) file. The download link can be found in a stock&#8217;s <strong>Summary</strong> page under the <strong>Toolbox</strong> header. Though unofficial, there is also a list of <strong>tags</strong> to select the stock data (price, P/E, etc) to be downloaded.</p>
+
+\t<p>Unfortunately this feature is not available under a stock&#8217;s <strong>Key Statistics</strong> page. Moreover, the unofficial list of tags only includes some of the <strong>key statistics</strong> data. See <a href="/information-technology/yahoo-finance-url-download-to-a-csv-file.html">Yahoo! Finance: <span class="caps">URL</span> Download to a <span class="caps">CSV</span> File</a> for details.</p>
+
+\t<p>As a result, the most feasible solution (least amount of work) for personal use was to write a script to scrape the information from a stock&#8217;s key statistics web pages. A major disadvantage, though, is the rewrites required when Yahoo! changes or rewrites their finance web pages. However, that has not happened for a while.</p>
+
+\t<p>Nonetheless, with a lack of options, a script <code>getKeystats</code> was written. The script is provided as is, and obtains it&#8217;s data from Yahoo! Finance.</p>
+
+\t<p><hr></p>
+
+\t<h1>About getKeystats</h1>
+
+\t<p><a class="photo" rel="my-gallery" href="http://www.canbike.org/public/images/081013/getKeystats/Yahoo_Finance-Download_Key_Statistics-01.jpg" title="Yahoo Finance-Download Key Statistics-01" alt="Yahoo Finance-Download Key Statistics-01"><img alt="Yahoo Finance-Download Key Statistics-01-thumb.jpg" src="http://www.canbike.org/public/images/081013/getKeystats/Yahoo_Finance-Download_Key_Statistics-01-thumb.jpg"/></a><a class="photo" rel="my-gallery" href="http://www.canbike.org/public/images/081013/getKeystats/Yahoo_Finance-Download_Key_Statistics-02.jpg" title="Yahoo Finance-Download Key Statistics-02" alt="Yahoo Finance-Download Key Statistics-02"><img alt="Yahoo Finance-Download Key Statistics-02-thumb.jpg" src="http://www.canbike.org/public/images/081013/getKeystats/Yahoo_Finance-Download_Key_Statistics-02-thumb.jpg"/></a><a class="photo" rel="my-gallery" href="http://www.canbike.org/public/images/081013/getKeystats/Yahoo_Finance-Download_Key_Statistics-03.jpg" title="Yahoo Finance-Download Key Statistics-03" alt="Yahoo Finance-Download Key Statistics-03"><img alt="Yahoo Finance-Download Key Statistics-03-thumb.jpg" src="http://www.canbike.org/public/images/081013/getKeystats/Yahoo_Finance-Download_Key_Statistics-03-thumb.jpg"/></a><a class="photo" rel="my-gallery" href="http://www.canbike.org/public/images/081013/getKeystats/Yahoo_Finance-Download_Key_Statistics-04.jpg" title="Yahoo Finance-Download Key Statistics-04" alt="Yahoo Finance-Download Key Statistics-04"><img alt="Yahoo Finance-Download Key Statistics-04-thumb.jpg" src="http://www.canbike.org/public/images/081013/getKeystats/Yahoo_Finance-Download_Key_Statistics-04-thumb.jpg"/></a></p>
+
+\t<p>A <strong>Yahoo! Finance Key Statistics</strong> <span class="caps">URL</span> is of the form <code>http://finance.yahoo.com/q/ks?s=[TICKER SYMBOl]+Key+Statistics</code>, where <code>[TICKER SYMBOL]</code> is a variable.</p>
+
+\t<p>The script <code>getKeystats</code> parses the key statistics to a <strong><span class="caps">CSV</span> file</strong>, a <strong>text file</strong>, and a <strong>master spreadsheet file</strong>.</p>
+
+\t<h2>Output Structure:</h2>
+
+\t<ul>
+\t\t<li>Data is saved into a directory <strong>Stock Data</strong>. If the directory does not exist, then it is created.</li>
+\t</ul>
+
+<pre><code>./Stock\\ Data/
+ |
+ |-csv/
+ |  |-[TICKER SYMBOL].csv
+ |
+ |-txt/
+ |  |-[TICKER SYMBOL].txt
+ |
+ |-ALL.csv
+</code>
+<code>where
+</code></pre>
+
+<pre><code>[TICKER SYMBOL].csv - contains the key statistics in a horizontal layout, separated by a comma
+[TICKER SYMBOL].txt - contains the key statistics in a vertical layout with labels
+ALL.csv - contains key statistics for all downloaded ticker symbols
+</code></pre>
+
+\t<p>\t<ul>
+\t\t<li>When the script <code>getKeystats</code> is run, new data is added to <code>ALL.csv</code>. Duplicate/outdated data is deleted.</li>
+\t</ul></p>
+
+\t<h2>Usage:</h2>
+
+\t<ul>
+\t\t<li>Command line usage is simple. Enter a ticker symbol, or multiple ticker symbols separated by a space.</li>
+\t</ul>
+
+<pre><code>usage: getKeysats [ticker symbol]
+Separate multiple tickers with a space.
+</code></pre>
+
+\t<h2>Script: getKeystats</h2>
+
+<pre><code>#!/bin/sh
+</code>
+<code># Variables
+#
+FOLDER=Stock\\ Data
+FILE=ALL.csv\t# Spreadsheet
+</code>
+<code>function getData(){
+\t# Date &amp; Time
+\tDATETIME=$(date)
+</code>
+<code>\tif [ -n &quot;$TICKER&quot; ]
+\tthen
+\t\t#==================== Get Data From Yahoo! Finance ========================
+\t\t#
+\t\t# Download key statistics from web
+\t\twget http://finance.yahoo.com/q/ks?s=$TICKER+Key+Statistics -O out.txt -nv &amp;&gt; /dev/null
+</code>
+<code>\t\t# Add newlines
+\t\tsed -i &quot;s/&lt;\\/tr\\&gt;/\\\\`echo -e &#39;\
+\\r&#39;`/g&quot; out.txt
+\t\tsed -i &quot;s/&lt;\\/span\\&gt;/\\\\`echo -e &#39;\
+\\r&#39;`/g&quot; out.txt
+</code>
+<code>\t\t# Adjust &quot;:&quot; for later replacement with &quot;,&quot;
+\t\tsed -i &quot;s/:&lt;\\/td&gt;/: &lt;\\/td&gt;/g&quot; out.txt
+</code>
+<code>\t\t# Clean key statistics
+\t\tsed -i &quot;s/&gt;&lt;tr&gt;&lt;td class=\\&quot;yfnc_tablehead1\\&quot; width=\\&quot;74%\\&quot;&gt;//g&quot; out.txt
+\t\tsed -i &quot;s/&lt;\\/td&gt;&lt;td class=\\&quot;yfnc_tabledata1\\&quot;&gt;//g&quot; out.txt
+\t\tsed -i &quot;s/&lt;\\/td&gt;//g&quot; out.txt
+\t\tsed -i &quot;s/&lt;font size=\\&quot;-1\\&quot;&gt;&lt;sup&gt;[0-9]&lt;\\/sup&gt;&lt;\\/font&gt;//g&quot; out.txt
+\t\tsed -i &quot;s/.*yfs_l84.*\\&quot;&gt;/Quote: /g&quot; out.txt
+</code>
+<code>\t\t# Delete non key statistics
+\t\tsed -i &quot;s/.*#yfi.*//g&quot; out.txt
+\t\tsed -i &#39;s/^[ \\t].*//&#39; out.txt
+\t\tsed -i &quot;s/&gt;.*//g&quot; out.txt
+\t\tsed -i &quot;s/&lt;.*//g&quot; out.txt
+\t\tsed -i &quot;s/.*}.*//g&quot; out.txt
+\t\tsed -i &quot;s/.*{.*//g&quot; out.txt
+\t\tsed -i &quot;s/.*\\*.*//g&quot; out.txt
+</code>
+<code>\t\t# Delete empty lines
+\t\tsed -i &quot;s/\\r//g&quot; out.txt
+\t\tsed -i &#39;/^$/d&#39; out.txt
+\t\t#--------------------------------------------------------------------------
+</code>
+<code>\t\t#==================== Parse Quote ==========================================
+\t\t#
+\t\t# Parse share price
+\t\tQUOTE=$(grep -Po &#39;Quote.*&#39; out.txt | sed &quot;s/Quote://g&quot;)
+\t\t#--------------------------------------------------------------------------
+</code>
+<code>\t\t#==================== Check Quote ==========================================
+\t\t#
+\t\t# Check if quote exists
+\t\tif [ -n &quot;$QUOTE&quot; ]
+\t\tthen
+\t\t\t#==================== Output Data =========================================
+\t\t\t#
+\t\t\t# Output results to screen
+\t\t\techo &quot;Ticker &quot;$TICKER&quot; found&quot;
+\t\t\techo &quot;&quot;
+</code>
+<code>\t\t\t# Create &quot;Stock Data&quot; directory if it does not exist
+\t\t\tif [ ! -d &quot;$FOLDER&quot; ]; then
+\t\t\t\tmkdir &quot;$FOLDER&quot;
+\t\t\tfi
+</code>
+<code>\t\t\tif [ ! -d &quot;$FOLDER/txt&quot; ]; then
+\t\t\t\tmkdir &quot;$FOLDER/txt&quot;
+\t\t\tfi
+</code>
+<code>\t\t\tif [ ! -d &quot;$FOLDER/csv&quot; ]; then
+\t\t\t\tmkdir &quot;$FOLDER/csv&quot;
+\t\t\tfi\t\t\t
+</code>
+<code>\t\t\t# Output key statistics to files &quot;&lt;Ticker Symbol&gt;.csv&quot; &quot;&lt;Ticker Symbol&gt;.txt&quot;
+\t\t\tif [ -n &quot;$QUOTE&quot; ]
+\t\t\tthen
+\t\t\t\t# Add ticker symbol and timestamp
+\t\t\t\tsed -i &quot;1i Date and Time: $DATETIME&quot; out.txt
+\t\t\t\tsed -i &quot;1i Ticker: $TICKER&quot; out.txt
+</code>
+<code>\t\t\t\t# Output to a text file
+\t\t\t\tcat out.txt &gt; $FOLDER/txt/$TICKER.txt
+</code>
+<code>\t\t\t\t# Output to a csv file
+\t\t\t\tsed -i &quot;s/,//g&quot; out.txt
+\t\t\t\tsed -i &quot;s/.*: //&quot; out.txt
+\t\t\t\ttr &#39;\
+&#39; &#39;,&#39; &lt; out.txt &gt; $FOLDER/csv/$TICKER.csv
+\t\t\tfi
+</code>
+<code>\t\t\t# Output to CSV list
+\t\t\tif [ -f &quot;$FOLDER/$FILE&quot; ]
+\t\t\tthen
+\t\t\t\tsed -i &quot;s/$TICKER.*//g&quot; &quot;$FOLDER/$FILE&quot;
+\t\t\t\tsed -i &#39;/^$/d&#39; &quot;$FOLDER/$FILE&quot;
+\t\t\t\tcat &quot;$FOLDER/csv/$TICKER.csv&quot; &gt;&gt; &quot;$FOLDER/$FILE&quot;
+\t\t\t\techo &quot;&quot; &gt;&gt; &quot;$FOLDER/$FILE&quot;
+\t\t\telse
+\t\t\t\techo &quot;Ticker,Date and Time,Quote,Enterprise Value,Trailing P/E (ttm intraday),Forward P/E,PEG Ratio (5 yr expected),Price/Sales (ttm),Price/Book (mrq),Enterprise Value/Revenue (ttm),Enterprise Value/EBITDA (ttm),Fiscal Year Ends,Most Recent Quarter (mrq),Profit Margin (ttm),Operating Margin (ttm),Return on Assets (ttm),Return on Equity (ttm),Revenue (ttm),Revenue Per Share (ttm),Qtrly Revenue Growth (yoy),Gross Profit (ttm),EBITDA (ttm),Net Income Avl to Common (ttm),Diluted EPS (ttm),Qtrly Earnings Growth (yoy),Total Cash (mrq),Total Cash Per Share (mrq),Total Debt (mrq),Total Debt/Equity (mrq),Current Ratio (mrq),Book Value Per Share (mrq),Operating Cash Flow (ttm),Levered Free Cash Flow (ttm),Beta,52-Week Change,S&amp;P500 52-Week Change,52-Week High,52-Week Low,50-Day Moving Average,200-Day Moving Average,Avg Vol (3 month),Avg Vol (10 day),Shares Outstanding,Float,% Held by Insiders,% Held by Institutions,Shares Short,Short Ratio,Short % of Float,Shares Short (prior month),Forward Annual Dividend Rate,Forward Annual Dividend Yield,Trailing Annual Dividend Yield,Trailing Annual Dividend Yield,5 Year Average Dividend Yield,Payout Ratio,Dividend Date,Ex-Dividend Date,Last Split Factor (new per old),Last Split Date,&quot; &gt; &quot;$FOLDER/$FILE&quot;
+\t\t\t\tcat &quot;$FOLDER/csv/$TICKER.csv&quot; &gt;&gt; &quot;$FOLDER/$FILE&quot;
+\t\t\t\techo &quot;&quot; &gt;&gt; &quot;$FOLDER/$FILE&quot;
+\t\t\tfi
+\t\t\t#--------------------------------------------------------------------------
+\t\telse
+\t\t\techo &quot;Ticker \\&quot;&quot;$TICKER&quot;\\&quot; not found&quot;
+\t\t\techo &quot;&quot;
+\t\tfi
+</code>
+<code>\t\t# Remove temp files
+\t\trm out.txt
+\t\t#--------------------------------------------------------------------------
+\telse
+\t\t# Missing argument. Output instructions.
+\t\techo &quot;usage: getKeystats [ticker symbol]&quot;
+\t\techo &quot;&quot;
+\tfi
+}
+</code>
+<code>if [ -z &quot;$1&quot; ]
+then
+\techo
+\techo &quot;usage: getKeystats [ticker symbol]&quot;
+\techo &quot;Separate multiple tickers with a space.&quot;
+\techo &quot;&quot;
+else
+\tfor var in &quot;$@&quot;
+\tdo
+\t\t# Convert argument to uppercase
+\t\tTICKER=$(echo $var | tr &quot;[a-z]&quot; &quot;[A-Z]&quot;)
+\t\t# Remove comma
+\t\tTICKER=$(echo $TICKER | sed -e &#39;s/,//g&#39;)
+</code>
+<code>\t\tif [ -n &quot;$TICKER&quot; ]
+\t\tthen
+\t\t\tgetData
+\t\tfi
+\tdone
+fi
+</code></pre>         \r
+                   <hr>\r
+<h3>Related Item(s):</h3>\r
+<ul>\r
+                                                      <li><a href="http://www.canbike.org/information-technology/2014/07/29/canadian-couch-potato-indexed-etfs.html" >Canadian Couch Potato Indexed ETFs</a></li>\r
+                                                  <li><a href="http://www.canbike.org/information-technology/2014/02/20/finance-coach-potato-rebalancing-with-new-cash.html" >[Finance] Coach Potato Rebalancing with New Cash</a></li>\r
+                                                              <li><a href="http://www.canbike.org/information-technology/2013/08/10/yahoo-finance-url-download-to-a-csv-file.html" >Yahoo! Finance: URL Download to a CSV File</a></li>\r
+              <li><a href="http://www.canbike.org/information-technology/2013/08/05/finance-price-shares-outstanding-levered-free-cash-flow.html" >[Finance] Price * Shares Outstanding / Levered Free Cash Flow</a></li>\r
+                                                                    <li><a href="http://www.canbike.org/information-technology/2013/02/15/stock-quotes-for-libreoffice-and-openoffice.html" >Stock Quotes for LibreOffice and OpenOffice</a></li>\r
+                        </ul> \r
+                </article>\r
+\r
+      </section>\r
+      \r
+\r
+\r
+</div>\r
+\r
+\r
+\r
+<!-- footer -->\r
+<footer>\r
+    <div class="footer-extra"><h1>CANbike Extra</h1></div>    <div class="footer-content">        \r
+        <ul class="footer-menu">\r
+\t        <li><a href="http://www.canbike.org/">CANbike</a></li>\r
+\r
+\t\t\t\t\t  <li><a href="http://www.canbike.org/bike.html" >Bike</a></li>\r
+\t\t\t\t\t  <li><a href="http://www.canbike.org/off-topic.html" >Off-Topic</a></li>\r
+\t\t\t\t\t  <li><a href="http://www.canbike.org/about-me.html" >About Me</a></li>\r
+\t\t\r
+                <li><a href="http://www.canbike.org/rss.xml">RSS Feed</a></li>\r
+\r
+                <li> <a href="http://www.canbike.org/search.html" >Search</a></li>\r
+        </ul>\r
+\r
+\t\r
+        <p class="footer-text">Online Tools: <a href="http://www.canbike.org/hash">Base64 Encoded Hash Generator</a><span class="divider"> | </span><a href="http://www.canbike.org/trails">Mountain Bike Trails</a></p>\r
+        <p class="footer-text">Finance Resources: <a href="http://www.canbike.org/dividends">Annual Dividends</a><span class="divider"> | </span><a href="http://www.canbike.org/finance">Financial Estimates</a></p>\r
+        <p class="footer-text">iMTB: <a rel="me" href="http://www.imtb.ca">Southern Ontario Off-Road Cycling News Feed</a></p>\r
+        <p class="footer-text">Entertainment: <a href="http://www.canbike.org/ppv">Professional Wrestling PPVs</a></p>\r
+        <p class="footer-text">Sport Resource: <a href="http://www.canbike.org/canada">Canada\'s Olympic Medals</a></p>\r
+        <p class="footer-text">Linux Operating System: <a href="http://www.canbike.org/off-topic/can-bike-os.html" >Can Bike OS</a></p>\r
+        <p class="footer-text">Mobile Resource: <a href="http://www.canbike.org/CSSpixels">CSS Pixel Widths</a></p>\r
+        <p class="footer-text">Mobile Tool: <a href="http://www.canbike.org/textbrowser">PHP Text Browser</a></p>\r
+        <p class="footer-text">Software Add-on: <a href="http://www.canbike.org/off-topic/canbike-tv.html" >CANbike TV</a></p>\r
+        <p class="footer-text">Historical Data: <a href="http://www.canbike.org/realestate">Real Estate</a></p>\r
+\r
+        \r
+        <div class="footer-middle"><div id="footer">\r
+  <p class="footer-text2"><a href="http://www.canbike.org/disclaimer.html" >Disclaimer</a> | &copy; Copyright 2015 CANbike.ca / CANbike.org</p>\r
+</div><!-- end #footer --></div>\r
+    </div>\r
+</footer>\r
+\r
+<!-- javascript -->\r
+    <!--[if lt IE 9]>\r
+\t    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>\r
+    <![endif]-->\r
+\r
+</body>\r
+</html>'
