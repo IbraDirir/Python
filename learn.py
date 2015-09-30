@@ -10,3 +10,4 @@ a[1:2] =  ['bletch', 'xyzzy']
 print (a)
 a[:0] = a
 print(a)
+a[:] = []
