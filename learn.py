@@ -1,9 +1,6 @@
-stocks =  {
-    'GOOG': 520.54,
-    'FB': 76.54,
-    'YHOO':399.28,
-    'APPL':99.76
-}
-print(min(zip(stocks.values(), stocks.keys())))
-print(max(zip(stocks.values(), stocks.keys())))
-print(sorted(zip(stocks.values(), stocks.keys())))
+a = ['spam', 'eggs', 100, 1234]
+print (a)
+a[2] = a[2] + 23
+print (a)
+a[0:2] = [1, 12]
+print(a)
