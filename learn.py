@@ -1,13 +1,7 @@
-a = ['spam', 'eggs', 100, 1234]
-print (a)
-a[2] = a[2] + 23
-print (a)
-a[0:2] = [1, 12]
-print(a)
-a[0:2] = []
-print(a)
-a[1:2] =  ['bletch', 'xyzzy']
-print (a)
-a[:0] = a
-print(a)
-a[:] = []
+
+q = ['a','b', 'c', 'd',]
+p = [1, q, 4]
+print(len(q))
+print(len(p))
+p[1].append('extra')
+print(p[1])
