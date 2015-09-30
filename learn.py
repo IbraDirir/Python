@@ -1,10 +1,7 @@
-def count_small(numbers):
-    total = 0
-    for n in numbers:
-        if n < 10:
-            total = total + 1
-    return total
-
-lost = [4, 8, 15, 16, 23, 42]
-small = count_small(lost)
-print(small)
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n//x)
+            break
+    else:
+        print('n is a prime number')
