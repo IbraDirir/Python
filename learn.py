@@ -1,10 +1,7 @@
-x = int(input('please enter an integer'))
-if    x <0:
-
-         print('negative changed to zero')
-elif x == 0:
-         print("zero")
-elif x == 1:
-         print('single')
-else:
-         print('more')
+#for loop
+a =  ['cat', 'cow', 'camel', 'sheep']
+for  x in a:
+    print(x, len(x))
+for  x in a[:]:
+    if len(x) > 6: a.insert(0 , x)
+    print(a)
