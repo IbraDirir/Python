@@ -1,9 +1,10 @@
-# Function definition is here
-def printme( str ):
-   "This prints a passed string into this function"
-   print(str)
-   return;
-my_story = 'I will tell you later'
-# Now you can call printme function
-printme('do you want to hear my story, '
-+ my_story)
+#calling a function from outside the fucntion
+def sum( arg1, arg2 ):
+   # Add both the parameters and return them."
+   total = arg1 + arg2; # Here total is local variable.
+   print "Inside the function local total : ", total
+   return total;
+
+# Now you can call sum function
+sum( 10, 20 );
+print "Outside the function global total : ", total
