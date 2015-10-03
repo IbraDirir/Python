@@ -1,13 +1,13 @@
-magic_number = 1500
-cupsOfFlour = 3
-magic_number = 1500
-eggs_per_cake = 3
-number_of_cakes = 10
-total_eggs = eggs_per_cake * number_of_cakes
-print(total_eggs)
-name = 'ibrahim'
-print('hi '+ name)
+names = ['Ali', 'Eli',  'rick',  'zelda']
+for name in names:
+    if name[0] in 'AEIOU':
+        print(name + ' starts with vowel')
 
-print('z' not in 'hello')
-if 'banana' not in 'bananarama':
-    print("i miss 80's")
+for name in names:
+    counter = 1
+    counter = counter + 1
+    print(counter)
+sentence = ""
+for  name  in names:
+    sentence = sentence + " " + name
+    print(name)
