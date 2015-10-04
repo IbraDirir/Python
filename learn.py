@@ -1,10 +1,7 @@
 #conditional  statements
-name = input('name? ')
-if name =="mark":
-    print('name entered is ', name)
-elif name == 'frank':
-    print('name entered is ', name)
-elif name == 'ian':
-    print('name entered is ', name)
-else:
-    print('name not recognized')
+name = 'girl'
+BoyName = 'ibra'
+if name == 'girl':
+    if BoyName =='ibra':
+        print('ibra  is amazing guy')
+    print('all boys are  not bad  boys!')
