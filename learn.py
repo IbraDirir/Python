@@ -1,7 +1,11 @@
 #conditional  statements
-name = 'girl'
+name = 'boy'
 BoyName = 'ibra'
 if name == 'girl':
-    if BoyName =='ibra':
+    if BoyName =='ali':
         print('ibra  is amazing guy')
-    print('all boys are  not bad  boys!')
+    else:
+        print('no name ibra')
+
+else:
+    print('no boys')
