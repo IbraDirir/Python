@@ -5,3 +5,5 @@ pow(4,5)
 print(max(mylist))
 import math
 print(math.sqrt(25))
+squareRoot = math.sqrt
+print(squareRoot(9))
