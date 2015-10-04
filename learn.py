@@ -1,8 +1,10 @@
 #conditional  statements
-n = int(input("Number?"))
-if n<0:
-    print("absolute value of", n, "is", -n)
+name = input('name? ')
+if name =="mark":
+    print('name entered is ', name)
+elif name == 'frank':
+    print('name entered is ', name)
+elif name == 'ian':
+    print('name entered is ', name)
 else:
-    print("put number less than zero, please")
-sumofthree=(9+89+1)
-print(sumofthree)
+    print('name not recognized')
