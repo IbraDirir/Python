@@ -1,10 +1,3 @@
-#calling a function from outside the fucntion
-def sum( arg1, arg2 ):
-   # Add both the parameters and return them."
-   total = arg1 + arg2; # Here total is local variable.
-   print "Inside the function local total : ", total
-   return total;
-
-# Now you can call sum function
-sum( 10, 20 );
-print "Outside the function global total : ", total
+a = ['marry', 'isak', 'ali', 'ismasha']
+for i in range(len(a)):
+   print(i, a[i])
