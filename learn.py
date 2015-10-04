@@ -10,6 +10,8 @@ squareRoot = math.sqrt
 print(squareRoot(9))
 #addibg lists
 names = ['ibra', 'john','kate','frank']
+#remoing from a list
 names.remove('frank')
 print(names)
 print(mylist.extend(names))
+print(mylist,names)
