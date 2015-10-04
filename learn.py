@@ -1,7 +1,5 @@
-for n in range(2, 10):
-    for x in range(2, n):
-        if n % x == 0:
-            print(n, 'equals', x, '*', n//x)
-            break
-    else:
-        print(n,  'is a prime number')
+def simple(num1, num2):
+    pass
+def simple(num1,num2=5):
+    print(num1,num2)
+simple(3)
