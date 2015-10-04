@@ -1,4 +1,3 @@
 import random
-for  i in range(10):
-    x = random.random()
-    print(x)
+t =  [1,3,5,5]
+print(random.choice(t))
