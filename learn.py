@@ -4,3 +4,5 @@ if n<0:
     print("absolute value of", n, "is", -n)
 else:
     print("put number less than zero, please")
+sumofthree=(9+89+1)
+print(sumofthree)
