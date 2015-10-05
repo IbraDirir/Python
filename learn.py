@@ -1,6 +1,6 @@
-#for loop
-b = [1,2,4,5,6,7,8,9]
-for num in b:
-    print(num)
-#difference between for and while  looop is that while loop waits
-#the condition to  be true  while for loop  there is no condition
+#A function is a group of statement that together performs specific  task
+#again and again whithout  writing the code  again and again
+#functions make the code readable and maintanable
+#def funtionname(arg1,arg2...):
+#statement1
+#statement2
