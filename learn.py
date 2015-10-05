@@ -15,3 +15,18 @@ studentScore("mark",100)#you can overwrite default paramaters
 def studentScores(name,*score):
     print(name,"scores",score, "Marks")
 studentScores("mark", 89, 90, 100, 100, 78)
+
+
+#Classes
+class Person:
+    def setFullName(self,FirstName, LastName):
+        self.FirstName = FirstName
+        self.LastName = LastName
+    def printFullName(self):
+        print(self.FirstName, " ", self.LastName)
+personName = Person()
+personName.setFullName("Ibrahim", "Dirir")
+personName.printFullName()
+
+
+
