@@ -1,3 +1,4 @@
-import random
-t =  [1,0,5,5]
-print(random.choice(t))
+a = 1
+while a < 5:
+    print(a)
+    a += 1
