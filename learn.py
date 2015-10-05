@@ -7,4 +7,5 @@ studentScore("Ibra", 99)
 
 def studentScore(name="tom", score=0):
     print(name,"got", score, "points")
-studentScore()
+
+studentScore("mark",100) #you can overwrite default paramaters
