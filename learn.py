@@ -4,3 +4,8 @@
 #def funtionname(arg1,arg2...):
 #statement1
 #statement2
+def hello(name):
+    print('hello ', name)
+hello('Ibrahim Dirir')
+hello('Ali')
+hello('Ian')
