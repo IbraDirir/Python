@@ -19,6 +19,9 @@ studentScores("mark", 89, 90, 100, 100, 78)
 
 #Classes
 class Person:
+    #initiliazing a class constructor
+    def __init__(self):
+        print("no need for explicit calling")
     def setFullName(self,FirstName, LastName):
         self.FirstName = FirstName
         self.LastName = LastName
